@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install any needed packages
-RUN npm install
+RUN npm install @titaniumnetwork-dev/ultraviolet@1
 
 # Copy the rest of the application code into the working directory
 COPY . .
