@@ -23,15 +23,3 @@ RUN npm run build
 RUN npm install https://github.com/titaniumnetwork-dev/Ultraviolet/releases/download/v1.0.1/ultraviolet-1.0.1.tgz
 
 RUN npm pack
-
-# Use an Nginx server to serve the application
-FROM nginx:1.27.2-alpine
-
-# Copy the built application files from the parent image
-COPY --from=0 /app/dist /usr/share/nginx/html
-
-# Expose port 80 for the Nginx server
-EXPOSE 80
-
-# Start the Nginx server
-CMD ["nginx", "-g", "daemon off;"]
