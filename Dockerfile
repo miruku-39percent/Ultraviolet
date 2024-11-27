@@ -20,7 +20,7 @@ COPY . .
 # Build the application for production
 RUN npm run build
 
-RUN npm install https://github.com/miruku-39percent/Ultraviolet/releases/download/v1.0.1/ultraviolet-1.0.1.tgz
+RUN npm install https://github.com/titaniumnetwork-dev/Ultraviolet/releases/download/v1.0.1/ultraviolet-1.0.1.tgz
 
 RUN npm pack
 
