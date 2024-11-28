@@ -24,4 +24,4 @@ RUN npm install https://github.com/titaniumnetwork-dev/Ultraviolet/releases/down
 
 RUN npm pack
 
-EXPOSE 80
+PORTS 80:8080-8181
